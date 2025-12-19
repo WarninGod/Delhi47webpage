@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // Use repo name as base for GitHub Pages
-      base: mode === 'development' ? '/' : '/Delhi47webpage/',
+      // Use relative base in production so it works on github.io and custom domains
+      base: mode === 'development' ? '/' : './',
       // Emit build output to docs/ so GitHub Pages can serve from branch if Actions is not selected
       build: {
         outDir: 'docs'
