@@ -33,7 +33,7 @@ const Products: React.FC = () => {
                 <p className="text-gray-600 mb-6 flex-1">{category.description}</p>
                 
                 <a 
-                  href={`https://wa.me/91${BUSINESS_DETAILS.phoneNumbers.main}?text=${encodeURIComponent(WHATSAPP_MESSAGE + " Specifically regarding " + category.title)}`}
+                  href={`https://wa.me/91${BUSINESS_DETAILS.phoneNumbers.alternate1}?text=${encodeURIComponent(WHATSAPP_MESSAGE + " Specifically regarding " + category.title)}`}
                   target="_blank" 
                   rel="noreferrer"
                   className="w-full block text-center py-3 border-2 border-slate-200 text-slate-700 font-bold rounded-lg hover:border-brand-primary hover:text-brand-primary transition-colors flex items-center justify-center gap-2"
