@@ -22,42 +22,42 @@ export const PRODUCT_CATEGORIES: Category[] = [
     title: "Hardware Fittings",
     description: "Premium locks, hinges, handles, and door security solutions.",
     icon: Wrench,
-    image: "https://images.unsplash.com/photo-1558002038-1091a1661116?auto=format&fit=crop&q=80&w=800" // Close up of door handle/lock
+    image: "/categories/hardware.png"
   },
   {
     id: 'tools',
     title: "Tools & Accessories",
     description: "Hand tools, power tool accessories, and precision equipment.",
     icon: Hammer,
-    image: "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&q=80&w=800" // Tools on workbench
+    image: "/categories/tools.png"
   },
   {
     id: 'electrical',
     title: "Electrical Items",
     description: "Switches, wires, sockets, and basic electrical fittings.",
     icon: Lightbulb,
-    image: "https://images.unsplash.com/photo-1544724569-5f546fd6dd2d?auto=format&fit=crop&q=80&w=800" // Wires and electrical tools
+    image: "/categories/electrical.png"
   },
   {
     id: 'plumbing',
     title: "Plumbing & Sanitary",
     description: "Pipes, faucets, valves, and bathroom essentials.",
     icon: Droplets,
-    image: "https://images.unsplash.com/photo-1585704083642-8d8040639013?auto=format&fit=crop&q=80&w=800" // Plumbing pipes and valves
+    image: "/categories/plumbing.png"
   },
   {
     id: 'paints',
     title: "Paints & Supplies",
     description: "Interior/exterior paints, brushes, rollers, and construction chemicals.",
     icon: PaintRoller,
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=800" // Paint cans and brushes
+    image: "/categories/paint.png"
   },
   {
     id: 'wholesale',
     title: "Wholesale Bulk Supply",
     description: "Special pricing for contractors and bulk orders.",
     icon: PackageOpen,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800" // Warehouse boxes
+    image: "/categories/wholesale.png"
   }
 ];
 
