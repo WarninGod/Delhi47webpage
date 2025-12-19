@@ -7,6 +7,10 @@ export default defineConfig(({ mode }) => {
     return {
       // Use repo name as base for GitHub Pages
       base: mode === 'development' ? '/' : '/Delhi47webpage/',
+      // Emit build output to docs/ so GitHub Pages can serve from branch if Actions is not selected
+      build: {
+        outDir: 'docs'
+      },
       server: {
         port: 3000,
         host: '0.0.0.0',
