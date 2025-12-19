@@ -5,6 +5,11 @@ export const BUSINESS_DETAILS: BusinessInfo = {
   name: "Delhi 47 Traders",
   owner: "Rajiv Chauhan",
   phone: "9711436932", // Raw number for tel links
+  phoneNumbers: {
+    main: "9999747085",
+    alternate1: "9711436932",
+    customerCare: "9971846318"
+  },
   address: "Aya Nagar, New Delhi",
   fullAddress: [
     "H-154, Main Street, H Block, Phase 6,",

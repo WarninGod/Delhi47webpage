@@ -17,6 +17,11 @@ export interface BusinessInfo {
   name: string;
   owner: string;
   phone: string;
+  phoneNumbers: {
+    main: string;
+    alternate1: string;
+    customerCare: string;
+  };
   address: string;
   fullAddress: string[];
   googleMapsUrl: string;

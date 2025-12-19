@@ -45,11 +45,19 @@ const Contact: React.FC = () => {
                     <Phone className="w-6 h-6 text-brand-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 mb-1">Phone Number</h3>
+                    <h3 className="font-bold text-slate-900 mb-1">Phone Numbers</h3>
                     <p className="text-gray-600 mb-2">Call for orders or stock availability.</p>
-                    <a href={`tel:+91${BUSINESS_DETAILS.phone}`} className="text-xl font-bold text-brand-primary hover:text-blue-800">
-                      +91 {BUSINESS_DETAILS.phone}
-                    </a>
+                    <div className="space-y-1">
+                      <a href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.main}`} className="block text-lg font-bold text-brand-primary hover:text-blue-800">
+                        +91 {BUSINESS_DETAILS.phoneNumbers.main}
+                      </a>
+                      <a href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.alternate1}`} className="block text-lg font-bold text-brand-primary hover:text-blue-800">
+                        +91 {BUSINESS_DETAILS.phoneNumbers.alternate1}
+                      </a>
+                      <a href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.customerCare}`} className="block text-sm font-semibold text-gray-600 hover:text-brand-primary">
+                        +91 {BUSINESS_DETAILS.phoneNumbers.customerCare} <span className="text-xs">(Customer Care)</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
 
