@@ -5,11 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // Use repo path for GitHub Pages project site
-      base: mode === 'development' ? '/' : '/Delhi47webpage/',
-      // Default Vite output for Actions-based Pages deploy
+      // Simpler: relative base and docs output for branch-based Pages
+      base: mode === 'development' ? '/' : './',
       build: {
-        outDir: 'dist'
+        outDir: 'docs'
       },
       server: {
         port: 3000,
