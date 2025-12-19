@@ -22,42 +22,42 @@ export const PRODUCT_CATEGORIES: Category[] = [
     title: "Hardware Fittings",
     description: "Premium locks, hinges, handles, and door security solutions.",
     icon: Wrench,
-    image: "categories/hardware.png"
+    image: "/categories/hardware.png"
   },
   {
     id: 'tools',
     title: "Tools & Accessories",
     description: "Hand tools, power tool accessories, and precision equipment.",
     icon: Hammer,
-    image: "categories/tools.png"
+    image: "/categories/tools.png"
   },
   {
     id: 'electrical',
     title: "Electrical Items",
     description: "Switches, wires, sockets, and basic electrical fittings.",
     icon: Lightbulb,
-    image: "categories/electrical.png"
+    image: "/categories/electrical.png"
   },
   {
     id: 'plumbing',
     title: "Plumbing & Sanitary",
     description: "Pipes, faucets, valves, and bathroom essentials.",
     icon: Droplets,
-    image: "categories/plumbing.png"
+    image: "/categories/plumbing.png"
   },
   {
     id: 'paints',
     title: "Paints & Supplies",
     description: "Interior/exterior paints, brushes, rollers, and construction chemicals.",
     icon: PaintRoller,
-    image: "categories/paint.png"
+    image: "/categories/paint.png"
   },
   {
     id: 'wholesale',
     title: "Wholesale Bulk Supply",
     description: "Special pricing for contractors and bulk orders.",
     icon: PackageOpen,
-    image: "categories/wholesale.png"
+    image: "/categories/wholesale.png"
   }
 ];
 
