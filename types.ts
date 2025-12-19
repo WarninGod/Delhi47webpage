@@ -20,6 +20,7 @@ export interface BusinessInfo {
   phoneNumbers: {
     main: string;
     alternate1: string;
+    alternate2: string;
     customerCare: string;
   };
   address: string;

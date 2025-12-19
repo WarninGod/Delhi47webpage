@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 import { BUSINESS_DETAILS, WHATSAPP_MESSAGE } from '../constants';
 
 const WhatsAppBtn: React.FC = () => {
-  const whatsappUrl = `https://wa.me/91${BUSINESS_DETAILS.phone}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const whatsappUrl = `https://wa.me/91${BUSINESS_DETAILS.phoneNumbers.main}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
     <a

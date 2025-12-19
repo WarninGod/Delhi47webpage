@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <a
-              href={`tel:+91${BUSINESS_DETAILS.phone}`}
+              href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.main}`}
               className="bg-brand-primary hover:bg-blue-600 text-white px-4 py-2 rounded-md flex items-center gap-2 text-sm font-bold transition-transform hover:scale-105"
             >
               <Phone className="w-4 h-4" />
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <a
-              href={`tel:+91${BUSINESS_DETAILS.phone}`}
+              href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.main}`}
               className="block w-full text-center bg-brand-primary text-white py-3 rounded-md font-bold mt-4"
             >
               Call Now

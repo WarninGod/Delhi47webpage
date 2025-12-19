@@ -8,6 +8,7 @@ export const BUSINESS_DETAILS: BusinessInfo = {
   phoneNumbers: {
     main: "9999747085",
     alternate1: "9711436932",
+    alternate2: "9873776574",
     customerCare: "9971846318"
   },
   address: "Aya Nagar, New Delhi",

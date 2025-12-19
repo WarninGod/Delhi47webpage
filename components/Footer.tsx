@@ -52,11 +52,22 @@ const Footer: React.FC = () => {
                   ))}
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-brand-primary shrink-0" />
-                <a href={`tel:+91${BUSINESS_DETAILS.phone}`} className="hover:text-white transition-colors">
-                  +91 {BUSINESS_DETAILS.phone.replace(/(\d{5})(\d{5})/, '$1 $2')}
-                </a>
+              <li className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-brand-primary shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <a href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.main}`} className="hover:text-white transition-colors">
+                    +91 {BUSINESS_DETAILS.phoneNumbers.main.replace(/(\d{5})(\d{5})/, '$1 $2')}
+                  </a>
+                  <a href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.alternate1}`} className="hover:text-white transition-colors">
+                    +91 {BUSINESS_DETAILS.phoneNumbers.alternate1.replace(/(\d{5})(\d{5})/, '$1 $2')}
+                  </a>
+                  <a href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.alternate2}`} className="hover:text-white transition-colors">
+                    +91 {BUSINESS_DETAILS.phoneNumbers.alternate2.replace(/(\d{5})(\d{5})/, '$1 $2')}
+                  </a>
+                  <a href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.customerCare}`} className="text-gray-400 hover:text-white transition-colors text-xs">
+                    +91 {BUSINESS_DETAILS.phoneNumbers.customerCare.replace(/(\d{5})(\d{5})/, '$1 $2')} (Customer Care)
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-brand-primary shrink-0" />

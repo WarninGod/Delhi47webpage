@@ -25,13 +25,13 @@ const Home: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href={`tel:+91${BUSINESS_DETAILS.phone}`}
+                href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.main}`}
                 className="inline-flex justify-center items-center gap-2 bg-brand-primary hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all"
               >
                 <Phone className="w-5 h-5" /> Call Now
               </a>
               <a 
-                href={`https://wa.me/91${BUSINESS_DETAILS.phone}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`}
+                href={`https://wa.me/91${BUSINESS_DETAILS.phoneNumbers.main}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex justify-center items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all"

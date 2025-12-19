@@ -33,7 +33,7 @@ const Products: React.FC = () => {
                 <p className="text-gray-600 mb-6 flex-1">{category.description}</p>
                 
                 <a 
-                  href={`https://wa.me/91${BUSINESS_DETAILS.phone}?text=${encodeURIComponent(WHATSAPP_MESSAGE + " Specifically regarding " + category.title)}`}
+                  href={`https://wa.me/91${BUSINESS_DETAILS.phoneNumbers.main}?text=${encodeURIComponent(WHATSAPP_MESSAGE + " Specifically regarding " + category.title)}`}
                   target="_blank" 
                   rel="noreferrer"
                   className="w-full block text-center py-3 border-2 border-slate-200 text-slate-700 font-bold rounded-lg hover:border-brand-primary hover:text-brand-primary transition-colors flex items-center justify-center gap-2"
@@ -51,7 +51,7 @@ const Products: React.FC = () => {
             We offer special pricing for contractors, builders, and large orders. Get in touch with us directly for a quote.
           </p>
           <a 
-            href={`tel:+91${BUSINESS_DETAILS.phone}`}
+            href={`tel:+91${BUSINESS_DETAILS.phoneNumbers.main}`}
             className="inline-block bg-brand-accent hover:bg-amber-600 text-slate-900 font-bold px-8 py-3 rounded-lg transition-colors"
           >
             Call Owner Directly
