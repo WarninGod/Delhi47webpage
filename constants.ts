@@ -1,9 +1,6 @@
 import { Wrench, Hammer, Lightbulb, Droplets, PaintRoller, PackageOpen } from 'lucide-react';
 import { BusinessInfo, Category } from './types';
 
-// Ensure assets resolve correctly in dev ("/") and GitHub Pages ("/Delhi47website1/")
-const ASSET_BASE = (import.meta as any).env?.BASE_URL ?? '/';
-
 export const BUSINESS_DETAILS: BusinessInfo = {
   name: "Delhi 47 Traders",
   owner: "Rajiv Chauhan",
@@ -25,42 +22,42 @@ export const PRODUCT_CATEGORIES: Category[] = [
     title: "Hardware Fittings",
     description: "Premium locks, hinges, handles, and door security solutions.",
     icon: Wrench,
-    image: `${ASSET_BASE}categories/hardware.png`
+    image: "images/hardware.jpg"
   },
   {
     id: 'tools',
     title: "Tools & Accessories",
     description: "Hand tools, power tool accessories, and precision equipment.",
     icon: Hammer,
-    image: `${ASSET_BASE}categories/tools.png`
+    image: "images/tools.jpg"
   },
   {
     id: 'electrical',
     title: "Electrical Items",
     description: "Switches, wires, sockets, and basic electrical fittings.",
     icon: Lightbulb,
-    image: `${ASSET_BASE}categories/electrical.png`
+    image: "images/electrical.jpg"
   },
   {
     id: 'plumbing',
     title: "Plumbing & Sanitary",
     description: "Pipes, faucets, valves, and bathroom essentials.",
     icon: Droplets,
-    image: `${ASSET_BASE}categories/plumbing.png`
+    image: "images/plumbing.jpg"
   },
   {
     id: 'paints',
     title: "Paints & Supplies",
     description: "Interior/exterior paints, brushes, rollers, and construction chemicals.",
     icon: PaintRoller,
-    image: `${ASSET_BASE}categories/paint.png`
+    image: "images/paints.jpg"
   },
   {
     id: 'wholesale',
     title: "Wholesale Bulk Supply",
     description: "Special pricing for contractors and bulk orders.",
     icon: PackageOpen,
-    image: `${ASSET_BASE}categories/wholesale.png`
+    image: "images/wholesale.jpg"
   }
 ];
 
