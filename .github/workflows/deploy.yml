@@ -36,7 +36,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          # Vite is configured to emit to docs/ for branch-based Pages; upload that folder
+          path: ./docs
 
   deploy:
     needs: build
