@@ -1,4 +1,4 @@
-import { Wrench, Hammer, Lightbulb, Droplets, PaintRoller, PackageOpen } from 'lucide-react';
+import { Wrench, Hammer, Lightbulb, Droplets, PaintRoller, PackageOpen, Home, Palette } from 'lucide-react';
 import { BusinessInfo, Category } from './types';
 
 export const BUSINESS_DETAILS: BusinessInfo = {
@@ -51,6 +51,20 @@ export const PRODUCT_CATEGORIES: Category[] = [
     description: "Interior/exterior paints, brushes, rollers, and construction chemicals.",
     icon: PaintRoller,
     image: "categories/paint.png"
+  },
+  {
+    id: 'homedecor',
+    title: "Home Decor",
+    description: "Decorative items, furnishings, and interior design accessories.",
+    icon: Home,
+    image: "categories/homedecor.png"
+  },
+  {
+    id: 'artframes',
+    title: "Art & Frames",
+    description: "Picture frames, art supplies, canvas, and custom framing solutions.",
+    icon: Palette,
+    image: "categories/artframes.png"
   },
   {
     id: 'wholesale',
