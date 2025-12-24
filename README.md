@@ -1,20 +1,81 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Delhi47 Website
 
-# Run and deploy your AI Studio app
+A simple, fast, and responsive company website for Delhi47 built with Vite, React, and TypeScript. It includes core pages (Home, Products, About, Contact), a navigation bar, footer, and a WhatsApp quick-contact button.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1cFAVKc9u7bWOMlsNRm4Jg-pNSMGAg81B
+- Fast dev/build with Vite
+- Modern React 19 + TypeScript
+- Client-side routing via `react-router-dom`
+- Responsive `Navbar` and `Footer`
+- WhatsApp contact shortcut
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- Vite 6
+- React 19, React DOM
+- TypeScript 5
+- `react-router-dom` 6
+- `lucide-react` icons
 
+## Project Structure
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```
+.
+├─ App.tsx
+├─ index.html
+├─ index.tsx
+├─ constants.ts
+├─ types.ts
+├─ vite.config.ts
+├─ components/
+│  ├─ Navbar.tsx
+│  ├─ Footer.tsx
+│  └─ WhatsAppBtn.tsx
+├─ pages/
+│  ├─ Home.tsx
+│  ├─ Products.tsx
+│  ├─ About.tsx
+│  └─ Contact.tsx
+├─ public/
+│  └─ categories/
+└─ docs/ (static build output if used)
+```
+
+## Getting Started
+
+Prerequisites: Node.js 18+ installed.
+
+Install dependencies and start the dev server:
+
+```bash
+npm install
+npm run dev
+```
+
+Build for production and preview locally:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Routing
+
+Routes are defined in [App.tsx](App.tsx) using `react-router-dom` and point to page components in [pages/](pages).
+
+## Customization
+
+- Update navigation and links in [components/Navbar.tsx](components/Navbar.tsx).
+- Edit footer details in [components/Footer.tsx](components/Footer.tsx).
+- Change WhatsApp target or visibility in [components/WhatsAppBtn.tsx](components/WhatsAppBtn.tsx).
+- Add or adjust product/category assets under [public/categories/](public/categories/).
+
+## Deployment
+
+This site builds to static assets via Vite and can be deployed to any static host (e.g., Vercel, Netlify, Cloudflare Pages, GitHub Pages). Use `npm run build` and deploy the `dist/` folder.
+
+## Notes
+
+- No external API keys are required.
+- The `docs/` folder may contain prebuilt assets if publishing with GitHub Pages.
